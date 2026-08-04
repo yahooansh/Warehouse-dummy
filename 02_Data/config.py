@@ -1,0 +1,13 @@
+# ==========================================
+#  Configuration
+# ==========================================
+
+NUMBER_OF_SUPPLIERS = 50
+NUMBER_OF_WAREHOUSES = 10
+NUMBER_OF_EMPLOYEES = 100
+NUMBER_OF_PRODUCTS = 500
+NUMBER_OF_ORDERS = 5000
+NUMBER_OF_ORDER_ITEMS = 15000
+NUMBER_OF_AUDITS = 1000
+NUMBER_OF_DEFECTS = 500
+NUMBER_OF_KPI_DAYS = 365

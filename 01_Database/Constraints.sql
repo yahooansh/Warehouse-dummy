@@ -67,22 +67,38 @@ GO
 -- FOREIGN KEYS
 -- =============================================
 
-                         Suppliers
-                             |
-                             |
-                         Products
-                         /   |   \
-                        /    |    \
-                       /     |     \
-              Inventory   OrderItems  InventoryAudits
-                  |            |             |
-                  |            |             |
-             Warehouses     Orders      Employees
-                  |
-                  |
-             DailyKPIs
-                  |
-        InventoryDefects
+                    PARENT TABLES
+                             
+        Suppliers                 Warehouses
+            |                         |
+            |                         |
+            ↓                         ↓
+
+        Products                 Employees
+            |                         |
+            |                         |
+            ↓                         ↓
+
+ ---------------------------------------------------
+ |                     |                           |
+ ↓                     ↓                           ↓
+
+Inventory          Orders                 InventoryAudits
+ |                   |                           |
+ |                   |                           |
+ ↓                   ↓                           ↓
+
+Products         OrderItems               InventoryDefects
+                     |
+                     |
+                     ↓
+                  Products
+
+
+Warehouses
+     |
+     ↓
+ DailyKPIs
 
 
 -- Employees -> Warehouses
