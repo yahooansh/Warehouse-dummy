@@ -99,7 +99,7 @@ def generate_quantity():
 
     return random.randint(
         0,
-        1000
+        20
     )
 
 
@@ -112,3 +112,5 @@ def generate_status():
     return random.choice(
         [1, 1, 1, 0]
     )
+    
+    
